@@ -1,0 +1,45 @@
+.Footer {
+  width: 100%;
+  height: 50px;
+
+  &.light {
+    p, a {
+      color: $white;
+    }
+  }
+
+  &.dark {
+    p, a {
+      color: $white;
+    }
+  }
+
+  &__container {
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      @include font(16, 400);
+
+      @include responsive($mbB_max) {
+        text-align: center
+      }
+
+      a {
+        @include font(16, 600);
+        transition: all ease .5s;
+
+        &:hover {
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}

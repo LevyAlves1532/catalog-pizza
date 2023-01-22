@@ -1,0 +1,64 @@
+.CardFlavor {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: $white;
+  cursor: pointer;
+  transition: all ease .5s;
+
+  display: flex;
+
+  &.active {
+    background-color: $primary_l;
+
+    .CardFlavor__right {
+      border-color: $white;
+
+      h3, h4, span, p {
+        color: $white;
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, .25);
+  }
+
+  h3, h4, span, p {
+    transition: all ease .5s;
+  }
+
+  &__left {
+    width: 30%;
+    background-color: $primary_l;
+    
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--background {
+      width: 100%;
+      height: 100%;
+      background-color: $primary_l;
+      opacity: .3;
+    }
+  }
+
+  &__right {
+    padding: 20px;
+    border-bottom: 3px solid $primary_l;
+    transition: all ease .5s;
+
+    flex: 1;
+
+    h3 {
+      @include font(20, 600);
+      color: $primary_l;
+      margin-bottom: 10px;
+    }
+
+    p {
+      @include font(16, 400);
+      color: $gray;
+    }
+  }
+}

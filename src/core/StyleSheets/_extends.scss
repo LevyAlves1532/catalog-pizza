@@ -1,0 +1,40 @@
+// FONTs
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// INCLUDEs
+@import "./includes/colors.scss";
+@import "./includes/func.scss";
+@import "./includes/screens.scss";
+
+// MAIN SCSS
+@import "./index.scss";
+
+// THEMEs
+@import "../../themes/_default/styles.scss";
+
+// TEMPLATEs
+@import "../../templates/_default/Header/styles.scss";
+@import "../../templates/_default/Main/styles.scss";
+@import "../../templates/_default/Footer/styles.scss";
+
+// FORMs
+@import "../../Forms/Home/FormSize/styles.scss";
+@import "../../Forms/Home/FormFlavors/styles.scss";
+@import "../../Forms/Home/FormDrinks/styles.scss";
+
+// CONTAINERs
+@import "../../Containers/Cart/ListProducts/styles.scss";
+
+// COMPONENTs
+@import "../../components/TabMenu/styles.scss";
+@import "../../components/CardSize/styles.scss";
+@import "../../components/Button/styles.scss";
+@import "../../components/CardFlavor/styles.scss";
+@import "../../components/CardDrink/styles.scss";
+@import "../../components/ButtonCart/styles.scss";
+@import "../../components/Title/styles.scss";
+@import "../../components/PizzaCart/styles.scss";
+
+// VIEWs
+@import "../../views/Home/styles.scss";
+@import "../../views/Cart/styles.scss";

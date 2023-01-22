@@ -1,0 +1,39 @@
+/*
+* START MIN SCREENS (Mobile First)
+*/
+$mbS_min: 'only screen and (min-width: 360px)';
+$mb_min: 'only screen and (min-width: 375px)';
+$mbB_min: 'only screen and (min-width: 450px)';
+$tb_min: 'only screen and (min-width: 768px)';
+$dsS_min: 'only screen and (min-width: 1024px)';
+$ds_min: 'only screen and (min-width: 1280px)';
+$dsB_min: 'only screen and (min-width: 1440px)';
+
+/*----------- MIN SCREENS VARIANTS -----------*/
+
+$mb_min__v: 'only screen and (min-width: 450px)';
+$tb_min__v: 'only screen and (min-width: 991px)';
+$ds_min__v: 'only screen and (min-width: 1980px)';
+/*
+* END MIN SCREENS
+*/
+
+/*
+* START MAX SCREENS (Desktop First)
+*/
+$mbS_max: 'only screen and (max-width: 360px)';
+$mb_max: 'only screen and (max-width: 375px)';
+$mbB_max: 'only screen and (max-width: 450px)';
+$tb_max: 'only screen and (max-width: 768px)';
+$dsS_max: 'only screen and (max-width: 1024px)';
+$ds_max: 'only screen and (max-width: 1280px)';
+$dsB_max: 'only screen and (max-width: 1360px)';
+
+/*----------- MAX SCREENS VARIANTS -----------*/
+
+$mb_max__v: 'only screen and (max-width: 450px)';
+$tb_max__v: 'only screen and (max-width: 991px)';
+$ds_max__v: 'only screen and (max-width: 1980px)';
+/*
+* END MAX SCREENS
+*/

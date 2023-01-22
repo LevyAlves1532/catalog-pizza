@@ -1,0 +1,11 @@
+.Title {
+  width: fit-content;
+  @include font(34, 600);
+  padding: 10px 30px;
+  color: $white;
+  border: 1px solid $white;
+
+  @include responsive($mbB_max) {
+    @include font(24, 600);
+  }
+}

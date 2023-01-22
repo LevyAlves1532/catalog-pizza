@@ -1,0 +1,73 @@
+.CartView {
+  &__title {
+    margin-bottom: 40px;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+
+    @include responsive($tb_max) {
+      flex-direction: column;
+    }
+
+    .Link,
+    .Button {
+      margin-right: 20px;
+
+      @include responsive($tb_max) {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+
+        order: 1;
+        justify-content: center;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+
+    &--value {
+      align-self: center;
+
+      @include responsive($tb_max) {
+        text-align: center;
+        margin-bottom: 20px;
+
+        order: 0;
+      }
+
+      h2 {
+        @include font(20, 600);
+        color: $white;
+
+        @include responsive($tb_max) {
+          @include font(30, 600);
+        }
+      }
+
+      h3 {
+        @include font(16, 400);
+        color: $gray_l;
+        
+        @include responsive($tb_max) {
+          @include font(26, 400);
+        }
+      }
+    }
+  }
+}

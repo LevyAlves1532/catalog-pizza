@@ -1,0 +1,49 @@
+.ListProducts {
+  &__pizzas,
+  &__drinks {
+    margin-bottom: 20px;
+
+    h2 {
+      @include font(28, 600);
+      color: $white;
+      padding: 20px;
+      border-bottom: 1px solid $white;
+      margin-bottom: 20px;
+      background-color: $primary_l;
+      border-radius: 5px 5px 0 0;
+    }
+  }
+
+  &__pizzas {
+    &--list {
+      .PizzaCart {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__drinks {
+    &--list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+
+      @include responsive($tb_max) {
+        grid-template-columns: repeat(2, 1fr);
+
+        .CardDrink {
+          display: flex;
+          flex-wrap: wrap;
+
+          .CardDrink__text {
+            align-self: flex-start;
+          }
+
+          .CardDrink__button {
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+  }
+}

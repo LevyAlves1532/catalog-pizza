@@ -1,0 +1,64 @@
+.CardDrink {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all ease .5s;
+  cursor: pointer;
+
+  &.active {
+    background-color: $primary_l;
+  }
+
+  &.Cart {
+    padding: 0;
+    cursor: default;
+
+    &:hover {
+      opacity: unset;
+    }
+
+    .CardDrink__text {
+      margin-bottom: 16px;
+    }
+
+    .CardDrink__button {
+      width: 100%;
+
+      .Button {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+
+  &__image {
+    margin-bottom: 10px;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+    h3 {
+      @include font(16, 600);
+      color: $white;
+      margin-bottom: 5px;
+    }
+
+    p {
+      @include font(14, 400);
+      color: $white_d;
+    }
+  }
+}

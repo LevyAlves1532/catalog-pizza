@@ -1,0 +1,27 @@
+.Link,
+.Button {
+  padding: 20px 40px;
+  background-color: $primary_l;
+  border-radius: 10px;
+  @include font(16, 600);
+  color: $white;
+  transition: all ease .5s;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-left: 10px;
+    font-size: 26px;
+  }
+
+  &.blocked {
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    background-color: $white;
+    color: $primary_l;
+  }
+}

@@ -1,0 +1,137 @@
+.PizzaCart {
+  width: 100%;
+
+  display: flex;
+
+  @include responsive($dsS_max) {
+    flex-direction: column;
+  }
+
+  &__left {
+    max-width: 375px;
+    width: 100%;
+    padding-right: 10px;
+
+    @include responsive($dsS_max) {
+      max-width: 100%;
+      padding: 0;
+      margin-bottom: 40px;
+    }
+
+    .Carousel {
+      width: 100%;
+
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(120deg, rgba(180, 77, 67, 1), rgba(180, 77, 67, .25));
+        border-radius: 10px;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      img {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: left center;
+
+        @include responsive($dsS_max) {
+          height: calc(66vw - 40px);
+        }
+      }
+    }
+  }
+
+  &__right {
+    width: calc(100% - 375px);
+    padding-left: 10px;
+
+    @include responsive($dsS_max) {
+      width: 100%;
+      padding: 0;
+    }
+
+    h3 {
+      width: 100%;
+      @include font(34, 600);
+      color: $white;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      width: 100%;
+      @include font(24, 400);
+      color: $gray_l;
+      margin-bottom: 5px;
+    }
+
+    &--flavors {
+      width: 100%;
+      margin-bottom: 20px;
+
+      display: flex;
+      flex-wrap: wrap;
+
+      p {
+        height: fit-content;
+        @include font(16, 200);
+        color: $white;
+        padding: 8px 26px;
+        border: 1px solid $white;
+        border-radius: 999px;
+        margin-right: 16px;
+        margin-bottom: 8px;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+
+    &--actions {
+      margin-top: auto;
+
+      display: flex;
+      align-items: center;
+
+      @include responsive($dsS_max) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .Button {
+        margin-right: 10px;
+
+        @include responsive($mbB_max) {
+          margin: 0;
+          width: calc(50% - 10px);
+          margin-left: 20px;
+          
+          display: flex;
+          justify-content: center;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+
+      p {
+        @include font(18, 800);
+        color: $white;
+
+        @include responsive($mbB_max) {
+          margin-top: 20px;
+          @include font(20, 800);
+        }
+      }
+    }
+  }
+}
